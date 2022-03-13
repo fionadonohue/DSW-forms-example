@@ -1,0 +1,89 @@
+/* TEXT */
+
+body {
+  font-family: georgia;
+  font-size: 20px;
+  color: #bfbfbf;
+  background-color: black;
+  margin-left: 5px
+}
+
+#h1{
+text-align: center;
+background-color: #5F9EA0;
+color: white;
+font-family: Georgia;
+border: 2px solid #9fc4c6;
+}
+
+.question{
+background-color: ;
+color: white;
+padding: 2px 2px;
+margin-left: 55px;
+}
+
+.answer{
+margin-left: 60px;
+}
+
+#firstq{
+    margin-top: 500000px;
+}
+
+/* BUTTONS */
+
+#submitb {
+background-color: white;
+color: #304f50;
+border: 2px solid white;
+padding: 15px 15px;
+text-align: center;
+text-decoration: none;
+font-size: 15px;
+border-radius: 50px;
+font-family: Georgia;
+margin: 50px
+}
+
+#submitb:active {
+  background-color: #5F9EA0;
+  transform: translateY(4px);
+}
+
+#submitb:hover {
+    background-color: #5F9EA0
+}
+
+/* IMAGES */
+body, html {
+  height: 100%;
+}
+#bgpic{
+  background-image: url("bgphoto.png");
+
+  height: 50%%;
+
+  background-position: top
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#bgpic {
+  background-image: url("bgphoto.png");
+
+  /* Full height */
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+}
