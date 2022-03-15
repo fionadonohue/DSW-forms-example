@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css')}}">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vacation Quiz</title>
@@ -21,19 +21,17 @@
 <br>
 <br>
 
-
-
-<form action=response.html name="form" method="post">
+<form action="" name="form" method="post">
       <label for="q2" class="question" id="firstq">1. Do you prefer urban or rural areas?</label>
       <br>
       <br>
 
-      <input name = "a2" type="radio" value=0 id="smalltowns" class="answer" />
+      <input name = "a2" type="radio" value=0 id="a2" class="answer" />
       <label for="smalltowns">Rural areas like smaller towns</label>
       <br>
       <br>
 
-      <input name = "a2" type="radio" value=5 id="cities" class="answer" />
+      <input name = "a2" type="radio" value=5 id="a2" class="answer" />
       <label for="cities">Urban areas like cities</label>
       <br>
       <br>
@@ -44,12 +42,12 @@
       <br>
       <br>
 
-      <input name = "a3" type="radio" value=0 id="yesnature" class="answer" />
+      <input name = "a3" type="radio" value=0 id="a3" class="answer" />
       <label for="yesnature">Yes, nature is important</label>
       <br>
       <br>
 
-      <input name = "a3" type="radio" value=5 id="nonature" class="answer" />
+      <input name = "a3" type="radio" value=5 id="a3" class="answer" />
       <label for="nonature">No, I don't spend much time in nature</label>
       <br>
       <br>
@@ -59,16 +57,16 @@
       <label for="weekends" class="question">3. What kind of environment makes you feel the most productive?</label>
        <br>
        <br>
-      <input type="radio" name="a4" value=5 id="beach" class="answer" />
+      <input type="radio" name="a4" value=5 id="a4" class="answer" />
       <label for="highenergy">I need to be in a high energy environment. I love working and keeping busy; having a lot of things to do makes me want to be more productive.</label>
       <br>
       <br>
-      <input type="radio" name="a4" value=3 id="mountains"  class="answer" />
+      <input type="radio" name="a4" value=3 id="a4"  class="answer" />
       <label for="friends">It depends on the mood I'm in. Sometimes I can be really productive, and sometimes I just want to relax all day.</label>
       <br>
       <br>
 
-     <input type="radio" name="a4" value=0 id="beach" class="answer" />
+     <input type="radio" name="a4" value=0 id="a4" class="answer" />
      <label for="chill">I value a calm environment. I need to balance my work with a lot of down time to avoid burnout.</label>
       <br>
       <br>
@@ -79,12 +77,12 @@
       <br>
       <br>
 
-      <input type="radio" name="a5" value=5 id="yescrowds" class="answer" />
+      <input type="radio" name="a5" value=5 id="a5" class="answer" />
       <label for="yescrowds">I like being around alot of people</label>
       <br>
       <br>
 
-      <input type="radio" name= "a5" value=0 id="nocrowds" class="answer"/>
+      <input type="radio" name= "a5" value=0 id="a5" class="answer"/>
       <label for="nocrowds"> I'd rather spend time alone or in a small group</label>
       <br>
       <br>
@@ -94,12 +92,12 @@
        <br>
        <br>
 
-      <input type="radio" name="a6" value="0" id="beach" class="answer" />
+      <input type="radio" name="a6" value="0" id="a6" class="answer" />
       <label for="beach">The beach</label>
       <br>
       <br>
 
-      <input type="radio" name="a6" value=5 id="mountains"  class="answer" />
+      <input type="radio" name="a6" value=5 id="a6"  class="answer" />
       <label for="mountains">The mountains</label>
       <br>
       <br>
@@ -109,16 +107,16 @@
       <label for="weekends" class="question">6. What do you do on the weekends?</label>
        <br>
        <br>
-      <input type="radio" name="a7" value=0 id="beach" class="answer" />
+      <input type="radio" name="a7" value=0 id="a7" class="answer" />
       <label for="nature">I'm relaxing or spending time outside in nature</label>
       <br>
       <br>
 
-      <input type="radio" name="a7" value=5 id="mountains" class="answer"  />
+      <input type="radio" name="a7" value=5 id="a7" class="answer"  />
       <label for="friends">I'm shopping or exploring town with my friends</label>
       <br>
       <br>
-     <input type="radio" name="a7" value=3 id="beach" class="answer" />
+     <input type="radio" name="a7" value=3 id="a7" class="answer" />
      <label for="working">I'm probably finishing work or finding another way to keep busy and stay productive</label>
       <br>
       <br>
@@ -128,20 +126,20 @@
       <br>
       <br>
 
-      <input type="radio" name = "a8" value=0 id="yesart" class="answer" />
+      <input type="radio" name = "a8" value=0 id="a8" class="answer" />
       <label for="yesart">Yes</label>
       <br>
       <br>
-      <input type="radio" name= "a8" value=5 id="noart" class="answer" />
+      <input type="radio" name= "a8" value=5 id="a8" class="answer" />
       <label for="noart">No</label>
       <br>
       <br>
       <br>
       <br>
 
-      <input type="submit" id="submitb" href="response.html">
+      <input type="submit" id="submitb" value="submitb">
   </form>
-<script src = "webapp.py" async defer></script>
+<script src = "app.py" async defer></script>
 
   </body>
 </html>
