@@ -13,7 +13,7 @@ def home():
             a8 = request.form["a8"]
 
             place = get_place(a2, a3, a4, a5, a6, a7, a8)
-            return render_template("response.html", city = place)
+            return render_template("response.html", city = place = cityimg)
     else:
         return render_template("home.html")
 @app.route("/response")
@@ -24,10 +24,15 @@ def get_place(a2, a3, a4, a5, a6, a7, a8):
     sum = int(a2) + int(a3) + int(a4) + int(a5) + int(a6) + int(a7) + int(a8)
     if (sum>=28):
         place = "New York City, New York"
+        cityimg = nyc.jpg
+
     if (28>sum>=21):
         place = "Austin, Texas"
+        cityimg = austin.jpg
     if (sum<21):
         place = "Sedona, Arizona"
+        cityimg = sedona.jpg
+
     return place
 
 if __name__ == "__main__":
