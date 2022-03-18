@@ -2,23 +2,30 @@
 
 body {
   font-family: georgia;
-  font-size: 20px;
+  font-size: 10px;
   color: #bfbfbf;
-  background-color: black;
+  background-color: white;
   margin-left: 5px
+  text-align: left;
+
 }
 
-#h1{
-text-align: center;
-background-color: #5F9EA0;
-color: white;
+#mainhead{
+color: #5F9EA0;
 font-family: Georgia;
-border: 2px solid #9fc4c6;
+float: right;
+font-size: 30px;
+
+margin-right: 30px;
+margin-top: 50px;
+
+
+
 }
 
 .question{
 background-color: ;
-color: white;
+color: black;
 padding: 2px 2px;
 margin-left: 55px;
 }
@@ -33,7 +40,7 @@ margin-left: 60px;
 
 /* BUTTONS */
 
-#submitb {
+#submit {
 background-color: white;
 color: #304f50;
 border: 2px solid white;
@@ -46,12 +53,12 @@ font-family: Georgia;
 margin: 50px
 }
 
-#submitb:active {
+#submit:active {
   background-color: #5F9EA0;
   transform: translateY(4px);
 }
 
-#submitb:hover {
+#submit:hover {
     background-color: #5F9EA0
 }
 
@@ -59,15 +66,7 @@ margin: 50px
 body, html {
   height: 100%;
 }
-#bgpic{
-  background-image: url("bgphoto.png");
 
-  height: 50%%;
-
-  background-position: top
-  background-repeat: no-repeat;
-  background-size: auto;
-}
 
 body, html {
   height: 100%;
@@ -75,15 +74,10 @@ body, html {
 }
 
 #bgpic {
-  background-image: url("bgphoto.png");
-
-  /* Full height */
-  width: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-image: url("airplane.jpg");
+  width: 25%;
+  float: left;
+  margin-left: 50px;
+  margin-top: 50px;
 
 }
