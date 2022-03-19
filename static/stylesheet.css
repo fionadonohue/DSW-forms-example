@@ -13,7 +13,6 @@ body {
 #mainhead{
 color: #5F9EA0;
 font-family: Georgia;
-float: right;
 font-size: 30px;
 text-align: center;
 margin-right: 30px;
@@ -74,7 +73,6 @@ body, html {
 }
 
 #bgpic {
-  background-image: url("airplane.jpg");
   width: 25%;
   float: left;
   margin-left: 50px;
